@@ -1,8 +1,9 @@
 // This program uses an array of ten characters to store the
 // first ten letters of the alphabet. The ASCII codes of the
 // characters are displayed.
+
 #include <iostream>
-using namespace std;
+//using namespace std;
 
 int main()
 {
@@ -10,12 +11,12 @@ int main()
     char letters[NUM_LETTERS] = { 'A', 'B', 'C', 'D', 'E',
                                  'F', 'G', 'H', 'I', 'J' };
 
-    cout << "Character" << "\t" << "ASCII Code\n";
-    cout << "---------" << "\t" << "----------\n";
+    std::cout << "Character" << "\t" << "ASCII Code\n";
+    std::cout << "---------" << "\t" << "----------\n";
     for (int count = 0; count < NUM_LETTERS; count++)
     {
-        cout << letters[count] << "\t\t";
-        cout << static_cast<int>(letters[count]) << endl;
+        std::cout << letters[count] << "\t\t";
+        std::cout << static_cast<int>(letters[count]) << std::endl;
     }
     return 0;
 }
